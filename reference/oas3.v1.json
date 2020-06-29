@@ -1,0 +1,36 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "oas3",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/testModel": {
+      "get": {
+        "summary": "getTest",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../models/testModel.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-testModel"
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
